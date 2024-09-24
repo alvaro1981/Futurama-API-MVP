@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="6dp"
+    app:cardUseCompatPadding="true"
+    tools:context=".view.FuturamaCharacters">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTitleCharacter"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="Phillip Jay Fray"
+            android:textSize="22sp"
+            android:fontFamily="@font/simpson_font"
+            app:layout_constraintBottom_toTopOf="@+id/imageCharacter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0."
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.513" />
+
+        <ImageView
+            android:id="@+id/imageCharacter"
+            android:layout_width="240dp"
+            android:layout_height="420dp"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/philip_fry"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvTitleCharacter"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:gravity="center"
+            android:text="GENERO: "
+            android:textStyle="bold"
+            android:fontFamily="@font/simpson_font"
+            app:layout_constraintStart_toEndOf="@+id/imageCharacter"
+            app:layout_constraintTop_toTopOf="@+id/imageCharacter" />
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/simpson_font"
+            android:gravity="center"
+            android:text="Masculino "
+            app:layout_constraintEnd_toEndOf="@+id/text1"
+            app:layout_constraintHorizontal_bias="0.13"
+            app:layout_constraintStart_toStartOf="@+id/text1"
+            app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:fontFamily="@font/simpson_font"
+            android:textStyle="bold"
+            android:text="ESPECIE: "
+            app:layout_constraintEnd_toEndOf="@+id/tvGender"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvGender"
+            app:layout_constraintTop_toBottomOf="@+id/tvGender" />
+
+        <TextView
+            android:id="@+id/tvSpecies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:fontFamily="@font/simpson_font"
+            android:text="Humano "
+            app:layout_constraintEnd_toEndOf="@+id/text2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/text2"
+            app:layout_constraintTop_toBottomOf="@+id/text2" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:fontFamily="@font/simpson_font"
+            android:text="PLANETA"
+            app:layout_constraintEnd_toEndOf="@+id/text2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/text2"
+            app:layout_constraintTop_toBottomOf="@+id/tvSpecies" />
+
+        <TextView
+            android:id="@+id/tvhomePlanet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:fontFamily="@font/simpson_font"
+            android:text="Tierra "
+            app:layout_constraintEnd_toEndOf="@+id/text3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/text3"
+            app:layout_constraintTop_toBottomOf="@+id/text3" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/simpson_font"
+            android:gravity="center"
+            android:text="OCUPACION:"
+            app:layout_constraintEnd_toEndOf="@+id/text3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/text3"
+            app:layout_constraintTop_toBottomOf="@+id/tvhomePlanet" />
+
+        <TextView
+            android:id="@+id/tvoccupation"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/simpson_font"
+            android:gravity="center"
+            android:text="Deliver "
+            app:layout_constraintEnd_toEndOf="@+id/text4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/text4"
+            app:layout_constraintTop_toBottomOf="@+id/text4" />
+
+        <TextView
+            android:id="@+id/tvAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/simpson_font"
+            android:gravity="center"
+            android:text="EDAD:"
+            app:layout_constraintEnd_toEndOf="@+id/text4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/text4"
+            app:layout_constraintTop_toBottomOf="@+id/tvoccupation" />
+
+        <TextView
+            android:id="@+id/tvRealAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/simpson_font"
+            android:text="26"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tvAge"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvAge"
+            app:layout_constraintTop_toBottomOf="@+id/tvAge"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

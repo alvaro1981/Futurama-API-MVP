@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="2dp"
+    app:cardBackgroundColor="@color/futucolor"
+    android:outlineAmbientShadowColor="#EA8F34">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/name_character"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/simpson_font"
+            android:text="Turanga Leela"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

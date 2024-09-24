@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item1"
+        android:title="Info"
+        android:icon="@drawable/futurammenuicon"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/sinopsis"
+                android:icon="@drawable/futurama_bender_48"
+                android:title="SINOPSIS"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/portada"
+                android:icon="@drawable/futurama_zoidberg_50"
+                android:title="PORTADA"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/planetExpress"
+                android:icon="@drawable/logo_planet_express_small"
+                android:title="HEADQUARTER"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/exitapp"
+                android:icon="@drawable/futurama_zapp_brannigan_50"
+                android:title="SALIR"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+</menu>
